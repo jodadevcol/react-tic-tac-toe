@@ -1,4 +1,6 @@
-export default function Section({ children, otherClassSection, isContainer = true }) {
+import './Layout.css.ts'
+
+export default function Section({ children, otherClassSection = '', isContainer = true }) {
   const classSection = `jd-section ${otherClassSection}`
   const classContainer = isContainer ? 'jd-container' : 'jd-wrapper'
 
