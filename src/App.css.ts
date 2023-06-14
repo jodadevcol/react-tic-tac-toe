@@ -1,4 +1,5 @@
 import { createGlobalTheme, globalStyle } from "@vanilla-extract/css";
+import { isMainThread } from "worker_threads";
 
 export const rootVars = createGlobalTheme(
   ':root',
@@ -49,5 +50,13 @@ export const resetHTML = globalStyle(
     margin: 0,
     padding: 0,
     boxSizing: "border-box"
+  }
+)
+
+export const body = globalStyle(
+  'body',
+  {
+    height: "100%",
+    maxHeight: '100vh'
   }
 )
