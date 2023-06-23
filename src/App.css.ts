@@ -1,5 +1,4 @@
 import { createGlobalTheme, globalStyle } from "@vanilla-extract/css";
-import { isMainThread } from "worker_threads";
 
 export const rootVars = createGlobalTheme(
   ':root',

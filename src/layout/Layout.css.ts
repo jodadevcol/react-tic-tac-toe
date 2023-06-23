@@ -1,4 +1,4 @@
-import { globalStyle } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const section = globalStyle('.jd-container',{
   width: '100%',
@@ -14,4 +14,8 @@ export const section = globalStyle('.jd-container',{
       paddingInline: '2rem'
     }
   }
+})
+
+export const wrapBox = style({
+  marginBlock: '1.6rem'
 })

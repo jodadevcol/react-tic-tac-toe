@@ -16,7 +16,11 @@ export const playerSimbol = style({
 }) 
 
 export const playersHeader = style({
-  fontSize: '1.6rem'
+  marginBlockEnd: '2.4rem',
+  textTransform: 'uppercase',
+  fontSize: '1.6rem',
+  fontWeight: '700',
+  letterSpacing: '1px'
 })
 
 export const playersAside = style({
@@ -30,5 +34,33 @@ export const playersAside = style({
 })
 
 export const playerIcon = style({
-  flexGrow: 1
+  flexGrow: 1,
+  width: 'auto',
+  height: 'auto',
+  paddingBlock: '0.8rem',
+  paddingInline: '0.8rem',
+  color: rootVars.color.silver,
+  border: '1px solid transparent',
+  borderRadius: '10px',
+  backgroundColor: 'transparent'
+})
+
+export const playerIconSecond = style({
+  color: rootVars.color.dark,
+  backgroundColor: rootVars.color.silver
+})
+
+export const playerIconSvg = style({
+  width: 'auto',
+  height: '32px'
+})
+
+export const playerFooter = style({
+  marginBlockStart: '1.6rem',
+  textTransform: 'uppercase',
+  fontSize: '1.4rem',
+  fontWeight: '500',
+  letterSpacing: '0.8px',
+  opacity: '0.5',
+  pointerEvents: 'none'
 })
