@@ -1,6 +1,8 @@
+import { iconSvg } from './Icons.css'
 
-export const IconCross = () => (
+export const IconCross = ({ classAdd = '' }) => (
   <svg
+    className={`${iconSvg} ${classAdd}`}
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0.27 0.27 63.46 63.46'
   >

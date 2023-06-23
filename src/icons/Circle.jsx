@@ -1,6 +1,11 @@
+import { iconSvg } from './Icons.css'
 
-export const IconCircle = () => (
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 66 66'>
+export const IconCircle = ({ classAdd = '' }) => (
+  <svg
+    className={`${iconSvg} ${classAdd}`}
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 66 66'
+  >
     <path
       fill='currentColor'
       stroke='currentColor'
