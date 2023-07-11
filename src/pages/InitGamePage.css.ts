@@ -64,3 +64,16 @@ export const playerFooter = style({
   opacity: '0.5',
   pointerEvents: 'none'
 })
+
+export const playerButtons = style({
+  display: "flex",
+  flexDirection: "column",
+  rowGap: '1.6rem',
+  maxWidth: '330px',
+  marginBlock: '3.2rem 0',
+  marginInline: 'auto'
+})
+
+export const playerButtonsItem = style({
+  marginBlock: 0,
+})

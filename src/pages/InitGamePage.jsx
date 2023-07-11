@@ -6,7 +6,7 @@ import { Layout } from '../layout/Layout'
 import Section from '../layout/Section'
 import { WrapBox } from '../layout/WrapBox'
 
-import { playersBox, playersHeader, playersAside, playerIcon, playerSimbol, playerIconSvg, playerIconSecond, playerFooter } from './InitGamePage.css.ts'
+import { playersBox, playersHeader, playersAside, playerIcon, playerSimbol, playerIconSvg, playerIconSecond, playerFooter, playerButtons, playerButtonsItem } from './InitGamePage.css.ts'
 
 export default function InitGamePage() {
   return (
@@ -28,12 +28,14 @@ export default function InitGamePage() {
             </footer>
           </Square>
 
-          <WrapBox>
-            <Button>New game (vs CPU)</Button>
-          </WrapBox>
+          <WrapBox otherClass={playerButtons}>
+            <WrapBox otherClass={playerButtonsItem}>
+              <Button theme='primary'>New game (vs CPU)</Button>
+            </WrapBox>
 
-          <WrapBox>
-            <Button>New game (vs PLAYER)</Button>
+            <WrapBox otherClass={playerButtonsItem}>
+              <Button theme='secondary'>New game (vs PLAYER)</Button>
+            </WrapBox>
           </WrapBox>
         </Section>
       </Layout>
