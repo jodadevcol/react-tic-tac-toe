@@ -1,15 +1,16 @@
-import { btn, btnText, btnYellow } from './Button.css'
+import { btn, btnText, btnPrimary, btnSecondary } from './Button.css'
 
 const TYPES_BTN = {
-  yellow: btnYellow
+  primary: btnPrimary,
+  secondary: btnSecondary
 }
 
-export const Button = ({ children, typeBtn = 'yellow' }) => {
-  const btnClassnamer = `${btn} ${TYPES_BTN[typeBtn]}`
+export const Button = ({ children, theme = 'primary' }) => {
+  const btnClassnamer = `${btn} ${TYPES_BTN[theme]}`
 
   return (
-    <button className={btnClassnamer}>
+    <div className={btnClassnamer}>
       <span className={btnText}>{children}</span>
-    </button>
+    </div>
   )
 }
