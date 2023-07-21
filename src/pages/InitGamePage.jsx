@@ -1,7 +1,8 @@
 import { Button } from '../components/Button'
+import { Logo } from '../components/Logo'
 import { Square } from '../components/Square'
-import { IconCircle } from '../icons/Circle'
-import { IconCross } from '../icons/Cross'
+import { IconCircle } from '../components/icons/Circle'
+import { IconCross } from '../components/icons/Cross'
 import { Layout } from '../layout/Layout'
 import Section from '../layout/Section'
 import { WrapBox } from '../layout/WrapBox'
@@ -13,6 +14,8 @@ export default function InitGamePage() {
     <>
       <Layout>
         <Section otherClassSection={`${playersBox}`}>
+          <Logo />
+
           <Square addClass={`${playerSimbol}`}>
             <header className={playersHeader}>
               <span>Pick player 1's Mark</span>
