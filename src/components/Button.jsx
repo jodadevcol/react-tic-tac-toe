@@ -5,12 +5,12 @@ const TYPES_BTN = {
   secondary: btnSecondary
 }
 
-export const Button = ({ children, theme = 'primary' }) => {
+export const Button = ({ href, children, theme = 'primary' }) => {
   const btnClassnamer = `${btn} ${TYPES_BTN[theme]}`
 
   return (
-    <div className={btnClassnamer}>
-      <span className={btnText}>{children}</span>
-    </div>
+    href
+      ? <a className={btnClassnamer} href=''><span className={btnText}>{children}</span></a>
+      : <div className={btnClassnamer}><span className={btnText}>{children}</span></div>
   )
 }
