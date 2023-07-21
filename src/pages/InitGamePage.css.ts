@@ -11,6 +11,7 @@ export const playersBox = style({
 })
 
 export const playerSimbol = style({
+  width: '100%',
   maxWidth: '330px',
   marginInline: 'auto'
 }) 
@@ -69,6 +70,7 @@ export const playerButtons = style({
   display: "flex",
   flexDirection: "column",
   rowGap: '1.6rem',
+  width: '100%',
   maxWidth: '330px',
   marginBlock: '3.2rem 0',
   marginInline: 'auto'
